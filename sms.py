@@ -74,11 +74,10 @@ except Exception:
     
     
 _phone = input('Enter Target Number -->> ')
-a = _phone
 c = urllib.request.urlopen(
 "https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
 b=int(base64.b64decode(c))
-if a==b:print ("This Number is a Protecting.")
+if _phone==b:print ("This Number is a Protecting.")
 else:print ("Bombing is now started!")
 
 _name = ''
