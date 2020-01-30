@@ -6,12 +6,6 @@ sifre=input("Password : ")
 
 if kullanici_adi=="admin" and sifre=='123':
     print("Login Successfully")
-elif kullanici_adi=="" or sifre=="":
-    print("Please Enter Username or Password")
-else:
-    print("Login Failed!!")
-exit()
-
 try:
     noti = urllib.request.urlopen(
         "https://raw.githubusercontent.com/4nat/reader/master/.protect.py").read().decode('utf-8')
@@ -20,5 +14,10 @@ try:
         print('\n\n\tNumber: ' + noti + '\n\n')
 except Exception:
     pass
+elif kullanici_adi=="" or sifre=="":
+    print("Please Enter Username or Password")
+else:
+    print("Login Failed!!")
+exit()
 
 
