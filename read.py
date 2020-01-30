@@ -1,15 +1,28 @@
 import urllib.request
+import getpass
+print "Reborn Login"
 
-kullanici_adi=input("Kullanıcı adınızı giriniz : ")
-sifre=input("Sifrenizi giriniz : ")
+CorrectUsername = "user"
+CorrectPassword = "123" 
 
-if kullanici_adi=="admin" and sifre=='tht':
-    print("Giriş Başarılı")
-elif kullanici_adi=="" or sifre=="":
-    print("Lutfen Bilgileri Giriniz")
-else:
-    print("Giriş Başarısız")
+loop = 'true'
+while (loop == 'true'):
 
+    username = raw_input("Please enter your username: ")
+
+    if (username == CorrectUsername):
+        loop1 = 'true'
+        while (loop1 == 'true'):
+            password = getpass.getpass("Please enter your password: ")
+            if (password == CorrectPassword):
+                print "Logged in successfully as " + username
+                loop = 'false'
+                loop1 = 'false'
+            else:
+                print "Password incorrect!"
+
+    else:
+        print "Username incorrect!"
 
 try:
     noti = urllib.request.urlopen(
