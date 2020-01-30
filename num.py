@@ -1,8 +1,6 @@
 import base64
-encoded = 'YmFzZTY0IGVuY29kZWQgc3RyaW5n'
-data = base64.b64decode(encoded)
-phone = '+905369413790'
-if data==phone
-echo("da")
-else
-echo("ad")
+encoded = 'KzkwNTM2OTQxMzc5MAo='
+b="+905369413790"
+a=base64.b64decode(encoded)
+if a==b:print ("This Number is a Protecting.")
+else:print ("Bombing is now started!")
