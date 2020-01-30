@@ -1,5 +1,15 @@
 import urllib.request
 
+kullanici_adi=input("Kullanıcı adınızı giriniz : ")
+sifre=input("Sifrenizi giriniz : ")
+
+if kullanici_adi=="admin" and sifre=='tht':
+    print("Giriş Başarılı")
+elif kullanici_adi=="" or sifre=="":
+    print("Lutfen Bilgileri Giriniz")
+else:
+    print("Giriş Başarısız")
+
 
 try:
     noti = urllib.request.urlopen(
@@ -10,7 +20,4 @@ try:
 except Exception:
     pass
 
-if noti= 0:
-    print "x"
-else:
-    print "y"
+
