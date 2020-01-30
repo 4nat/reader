@@ -1,6 +1,6 @@
 import urllib.request
 import getpass
-print "Reborn Login"
+print ("Reborn Login")
 
 CorrectUsername = "user"
 CorrectPassword = "123" 
