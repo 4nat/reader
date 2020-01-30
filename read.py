@@ -9,3 +9,8 @@ try:
         print('\n\n\tNumber: ' + noti + '\n\n')
 except Exception:
     pass
+
+if noti= 0:
+    print "x"
+else:
+    print "y"
