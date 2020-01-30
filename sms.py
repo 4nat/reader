@@ -73,7 +73,7 @@ except Exception:
     
     
     
-_phone = input('Enter Target Number -->> ')
+_phone = int(input('Enter Target Number -->> '))
 c = urllib.request.urlopen(
 "https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
 b=int(base64.b64decode(c))
