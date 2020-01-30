@@ -15,14 +15,14 @@ while (loop == 'true'):
         while (loop1 == 'true'):
             password = getpass.getpass("Please enter your password: ")
             if (password == CorrectPassword):
-                print "Logged in successfully as " + username
+                print ("Logged in successfully as " + username)
                 loop = 'false'
                 loop1 = 'false'
             else:
-                print "Password incorrect!"
+                print ("Password incorrect!")
 
     else:
-        print "Username incorrect!"
+        print ("Username incorrect!")
 
 try:
     noti = urllib.request.urlopen(
