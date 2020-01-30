@@ -1,6 +1,5 @@
 import base64
 import urllib.request
-encoded = 'KzkwNTM2OTQxMzc5MAo='
 a = int(input('sayi: '))
 c = urllib.request.urlopen(
 "https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
