@@ -97,12 +97,11 @@ _phoneGorzdrav = _phone[1:4]+') '+_phone[4:7]+'-'+_phone[7:9]+'-'+_phone[9:11]
 iteration = 0
 
 
-    c = urllib.request.urlopen(
+c = urllib.request.urlopen(
 "https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
 b=int(base64.b64decode(c))
-if _phone==b:print ("This Number is a Protecting.")
+if _phone == b: sys.exit
 else:print ("Bombing is now started!")
-
 
 
 while True:
