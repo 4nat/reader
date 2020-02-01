@@ -28,7 +28,6 @@ def checkinternet():
         res = True
     if res:
         print("\n\n\tIt seems That Your Internet Speed is Slow or You Are Using Proxies..")
-        banner()
         exit()
 def update():
     stuff_to_update = ['sms.py', '.version']
@@ -73,7 +72,21 @@ except Exception:
     
     
     
-_phone = input('Enter Target Number -->> ')
+_phone = int(input('Enter Target Number -->> '))
+
+def num():
+try:
+a = _phone
+c = urllib.request.urlopen(
+"https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
+b=int(base64.b64decode(c))
+if a==b:print ("This Number is a Protecting.")
+else:print ("Bombing is now started!")
+except Exception:
+    pass
+    
+
+
 _name = ''
 for x in range(12):
 	_name = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
