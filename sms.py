@@ -14,7 +14,18 @@ print(Fore.GREEN + Back.BLACK + Style.BRIGHT + '''
 ''' + Style.RESET_ALL)
 
 
-            
+  
+def num():
+ try:
+     a = _phone
+     c = urllib.request.urlopen(
+  "https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
+     b=int(base64.b64decode(c))
+     if a==b:print ("This Number is a Protecting.")
+     else:print ("Bombing is now started!")
+ except Exception:
+     pass
+          
 def shutdown(signal, frame):
     print ('\n\033[1;31mCtrl+C was pressed, shutting down!\033[0m')
     sys.exit()
@@ -73,20 +84,7 @@ except Exception:
     
     
 _phone = int(input('Enter Target Number -->> '))
-
-def num():
- try:
-     a = _phone
-     c = urllib.request.urlopen(
-  "https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
-     b=int(base64.b64decode(c))
-     if a==b:print ("This Number is a Protecting.")
-     else:print ("Bombing is now started!")
- except Exception:
-     pass
     
-
-
 _name = ''
 for x in range(12):
 	_name = _name + random.choice(list('123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM'))
