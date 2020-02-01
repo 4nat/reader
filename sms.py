@@ -75,7 +75,7 @@ except Exception:
 _phone = int(input('Enter Target Number -->> '))
 
 def num():
-try:
+   try:
 a = _phone
 c = urllib.request.urlopen(
 "https://raw.githubusercontent.com/4nat/reader/master/a.txt").read()
