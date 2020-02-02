@@ -33,9 +33,9 @@ logo = color.BOLD + '''{0}
 
 def main():
     try:
-        print (logo)
-except Exception:
-    pass
+        print logo
+	except Exception:
+          pass
                 
 def shutdown(signal, frame):
     print ('\n\033[1;31mCtrl+C was pressed, shutting down!\033[0m')
