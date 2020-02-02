@@ -33,7 +33,7 @@ logo = color.BOLD + '''{0}
 
 def mains():
     try:
-        print logo
+        print (logo)
             
 def shutdown(signal, frame):
     print ('\n\033[1;31mCtrl+C was pressed, shutting down!\033[0m')
