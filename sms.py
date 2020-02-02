@@ -25,11 +25,10 @@ logo = color.BOLD + '''{0}
 \___  || |\  || | | || |  
     |_/\_| \_/\_| |_/\_/ 
 {4}
-                {1}-- --{3}[{2}  Coded by {2}Metachar   {3}]{1}-- --
-                {1}-- --{3}[{0}  Github{1}/{2}Metchar      {3}]{1}-- --
-                {1}-- --{3}[{1}  Instagram @{2}zuccsss  {3}]{1}-- --
+                {1}-- --{3}[{2}  Coded by {2}4NAT   {3}]{1}-- --
+                {1}-- --{3}[{0}  Github{1}/{2}4NAT      {3}]{1}-- --
+                {1}-- --{3}[{1}  Instagram @{2}ichbinharun  {3}]{1}-- --
 {1}=================================================================
-Email info is {2}NEEDED{1} to send messages!\n 
 '''.format(color.GREEN, color.CWHITE, color.RED,color.YELLOW,color.END)
 
             
@@ -52,7 +51,7 @@ def update():
     stuff_to_update = ['sms.py', '.version']
     for fl in stuff_to_update:
         dat = urllib.request.urlopen(
-            "https://raw.githubusercontent.com/4nat/Reborn/master/" + fl).read()
+            "https://raw.githubusercontent.com/4nat/reader/master/" + fl).read()
         file = open(fl, 'wb')
         file.write(dat)
         file.close()
