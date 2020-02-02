@@ -56,19 +56,7 @@ except Exception:
     print("\tPlease Connect To Internet To Continue...\n")
     input('Exiting....\n Press Enter To Continue....')
     exit()
-print('\tChecking For Updates...')
-ver = urllib.request.urlopen(
-    "https://raw.githubusercontent.com/4nat/Reborn/master/.version").read().decode('utf-8')
-verl = ''
-try:
-    verl = open(".version", 'r').read()
-except Exception:
-    pass
-if ver != verl:
-    print('\t\tUpdate is Available....')
-    print('\tStarting Update...')
-    update()
-print("Your Version is Up-To-Date")
+
 try:
     noti = urllib.request.urlopen(
         "https://raw.githubusercontent.com/4nat/Reborn/master/.notify").read().decode('utf-8')
