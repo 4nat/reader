@@ -47,17 +47,7 @@ def checkinternet():
         print("\n\n\tIt seems That Your Internet Speed is Slow or You Are Using Proxies..")
         banner()
         exit()
-def update():
-    stuff_to_update = ['sms.py', '.version']
-    for fl in stuff_to_update:
-        dat = urllib.request.urlopen(
-            "https://raw.githubusercontent.com/4nat/reader/master/" + fl).read()
-        file = open(fl, 'wb')
-        file.write(dat)
-        file.close()
-    print('\n\t\tUpdated Successfull !!!!')
-    print('\tPlease Run The Script Again...')
-    exit()
+
 
 try:
     urllib.request.urlopen('https://www.google.com')
